@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loki | Le film</title>
+    <!-- Fontawesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="container-fluid bg-dark pb-5">
+      <nav class="navbar navbar-expand-md navbar-dark py-5">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="./images/logo.svg" alt="Loki | Le film" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-end mt-2 justify-content-md-end mt-md-0" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-house"></i> Accueil</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-video"></i> Tournage</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 text-center d-flex flex-column justify-content-center align-items-md-start">
+            <h1 class="title">Loki</h1>
+            <p class="text-secondary fs-4 mb-5 text-md-start">
+              Inspiré de son homologue de la mythologie nordique, Le dieu farceur fait son retour à l'écran dans un
+              nouveau film palpitant et pleins de rebondissements.
+            </p>
+            <form class="row mx-auto mx-md-0 gx-3 mb-5">
+              <div class="col-6">
+                <label for="ticketsAmount" hidden>Quantité de billets</label>
+                <input
+                  type="number"
+                  name="ticketsAmount"
+                  id="ticketsAmount"
+                  min="1"
+                  max="30"
+                  placeholder="Quantité"
+                  class="form-control col-6"
+                  required
+                />
+              </div>
+              <div class="col-6">
+                <button type="submit" class="btn">Commander</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div id="carousel" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/loki_carousel_02.jpg"
+                    class="d-block w-100"
+                    alt="Loki debout avec son nom en titre"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/loki_carousel_01.jpg"
+                    class="d-block w-100"
+                    alt="Loki assis regardant droit devant"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/loki_carousel_03.jpg" class="d-block w-100" alt="Loki regardant droit devant" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="galery">
+        <div class="container section-border-top py-5">
+          <div class="row text-center">
+            <h2 class="title">Images et extraits</h2>
+            <p class="text-secondary mb-4 fs-4">Des scènes intrépides qui vous garderont captivé.</p>
+          </div>
+          <form class="d-flex justify-content-center mb-4">
+            <div class="me-2">
+              <label for="email" hidden>Courriel</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Entrez votre courriel" />
+            </div>
+            <div class="ms-2">
+              <input type="button" value="Inscription" class="btn m-auto" />
+            </div>
+          </form>
+          <div class="row gy-4">
+            <div class="col-md-6 col-xl-4">
+              <img src="./images/loki_extrait_01.jpg" alt="Loki luttant contre Thor" class="w-100" />
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <img src="./images/loki_extrait_02.jpg" alt="Loki et Thor" class="w-100" />
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <img src="./images/loki_extrait_03.jpg" alt="Loki enchaîné" class="w-100" />
+            </div>
+            <div class="d-none col-md-6 col-xl-8 offset-xl-2 d-md-flex align-items-stretch h-auto">
+              <iframe
+                src="https://www.youtube.com/embed/-JPkvO1e1Gw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                class="w-100"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="casting">
+        <div class="container section-border-top py-5">
+          <div class="row text-center text-md-start">
+            <h2 class="title">Casting</h2>
+            <p class="text-secondary mb-4 fs-4">
+              Retrouvez vos acteurs préférés dans cette continuité des films Marvel.
+            </p>
+          </div>
+          <div class="row g-3 d-flex justify-content-center">
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/tom_hiddleston.jpg" alt="Tom Hiddleston" class="card-img-top mb-3" />
+                  <h3>Tom Hiddleston</h3>
+                  <h4 class="card-subtitle">Acteur</h4>
+                </div>
+                <div class="card__body">Dans le rôle de Loki</div>
+                <div class="card__footer">
+                  <a href="https://www.facebook.com/twhiddleston" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/twhiddleston" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/twhiddleston/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/chris_hemsworth.jpg" alt="Chris Hemwsorth" class="card-img-top mb-3" />
+                  <h3>Chris Hemsworth</h3>
+                  <h4 class="card-subtitle">Acteur</h4>
+                </div>
+                <div class="card__body">Dans le rôle de Thor</div>
+                <div class="card__footer">
+                  <a href="https://www.facebook.com/chrishemsworth" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/chrishemsworth" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/chrishemsworth/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/anthony_hopkins.jpg" alt="Anthony Hopkins" class="card-img-top mb-3" />
+                  <h3>Anthony Hopkins</h3>
+                  <h4 class="card-subtitle">Acteur</h4>
+                </div>
+                <div class="card__body">Dans le rôle d'Odin</div>
+                <div class="card__footer">
+                  <a href="https://www.facebook.com/AnthonyHopkins" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/AnthonyHopkins" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/anthonyhopkins/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/idris_elba.jpg" alt="Idri Elba" class="card-img-top mb-3" />
+                  <h3 class="text-primary">Idris Elba</h3>
+                  <h4 class="card-subtitle">Acteur</h4>
+                </div>
+                <div class="card__body">Dans le rôle Heimdall</div>
+                <div class="card__footer">
+                  <a href="https://fr-ca.facebook.com/idriselba" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/idriselba" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/idriselba/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/rene_russo.webp" alt="Rene Russo" class="card-img-top mb-3" />
+                  <h3 class="text-primary">Rene Russo</h3>
+                  <h4 class="card-subtitle">Actrice</h4>
+                </div>
+                <div class="card__body">Dans le rôle de Frigga</div>
+                <div class="card__footer">
+                  <a href="https://www.facebook.com/profile.php?id=100069476252450" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/queenrenerusso" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/renerussodaily" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/jaimie_alexander.jpg" alt="Jaimie Alexander" class="card-img-top mb-3" />
+                  <h3 class="text-primary">Jaimie Alexander</h3>
+                  <h4 class="card-subtitle">Actrice</h4>
+                </div>
+                <div class="card__body">Dans le rôle de Sif</div>
+                <div class="card__footer">
+                  <a href="https://www.facebook.com/Jaimie-Alexander-100881948763851/" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/jaimiealexreal" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/jaimiealexander/?hl=fr" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/josh_dallas.webp" alt="Josh Dallas" class="card-img-top mb-3" />
+                  <h3 class="text-primary">Josh Dallas</h3>
+                  <h4 class="card-subtitle">Acteur</h4>
+                </div>
+                <div class="card__body">Dans le rôle de Fandral</div>
+                <div class="card__footer">
+                  <a href="https://www.facebook.com/JoshDallas828" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/JoshDallas" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/joshdallas/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-xl-3">
+              <div class="card">
+                <div class="card__header">
+                  <img src="./images/tadanobu_asano.webp" alt="Tadanobu Asano" class="card-img-top mb-3" />
+                  <h3 class="text-primary">Tadanobu Asano</h3>
+                  <h4 class="card-subtitle">Acteur</h4>
+                </div>
+                <div class="card__body">Dans le rôle de Hogun</div>
+                <div class="card__footer">
+                  <a href="https://fr-fr.facebook.com/tadanobu.asano.official/" target="_blank" class="me-2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/asano_tadanobu" target="_blank" class="me-2">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/tadanobu_asano/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="commentary">
+        <div class="container section-border-top py-5">
+          <h2 class="title" hidden>Commentaire</h2>
+          <div class="row gy-3">
+            <div class="col-12 gx-5">
+              <div class="commentary row">
+                <p class="commentary__description col-md-6 order-md-2">
+                  "Loki est un film d'action et de suspense qui nous garde en éveil jusqu'à la toute dernière seconde.
+                  Très heureux de retrouver nos personnages préféré."
+                </p>
+                <img
+                  src="./images/commentary_01.webp"
+                  alt="Heimdall contre Loki"
+                  class="commentary__img col-md-6 order-md-1"
+                />
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="commentary row">
+                <p class="commentary__description col-md-6">
+                  "Enfin un film qui nous a permis de découvrir Loki, le dieu farceur : charismatique, charmeur,
+                  prétentieux, manipulateur et rigoureux"
+                </p>
+                <img src="./images/commentary_02.jpg" alt="Heimdall contre Loki" class="commentary__img col-md-6" />
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="commentary row">
+                <p class="commentary__description col-md-6 order-md-2">
+                  "Loki est un film d'action et de suspense qui nous garde en éveil jusqu'à la toute dernière seconde.
+                  Très heureux de retrouver nos personnages préféré."
+                </p>
+                <img
+                  src="./images/commentary_03.jpg"
+                  alt="Heimdall contre Loki"
+                  class="commentary__img col-md-6 order-md-1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-8">
+            <a href="tel:+15149698924" class="text-decoration-none me-2">
+              <i class="fa-solid fa-phone"></i><span class="ms-1">514-969-8924</span>
+            </a>
+
+            <a href="mailto:jonathannadeau.jn@gmail.com" class="text-decoration-none">
+              <i class="fa-solid fa-envelope"></i><span class="ms-1">jonathannadeau.jn@gmail.com</span>
+            </a>
+          </div>
+          <div class="col-auto text-end">
+            <p class="text-primary">
+              Jonathan Nadeau
+              <a href="https://www.facebook.com/jonathan.nadeau.5245/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com/NadeauJn"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/jonathan.nadeau.91"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/jonathannadeau91/"><i class="fa-brands fa-linkedin"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="row section-border-top pt-3">
+          <p class="text-primary">Cégep de Trois-Rivières</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@import '../bootstrap/scss/bootstrap.scss';
+
+.commentary {
+  @extend .text-secondary;
+  @extend .fs-4;
+  @extend .py-3;
+  @extend .gx-5;
+  &__description {
+    @extend .text-center;
+    @extend .text-md-start;
+    @extend .mb-md-2;
+    @extend .align-self-center;
+  }
+
+  &__img {
+    @extend .rounded-1;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../bootstrap/scss/bootstrap.scss';
+
+.card {
+  @extend .bg-dark;
+  @extend .shadow-lg;
+  @extend .p-2;
+  @extend .h-100;
+  @extend .text-primary;
+
+  &__header {
+    @extend .card-header;
+  }
+
+  &__body {
+    @extend .card-body;
+    @extend .text-secondary;
+  }
+
+  &__footer {
+    @extend .card-footer;
+    @extend .d-flex;
+    @extend .justify-content-start;
+    @extend .h4;
+  }
+}

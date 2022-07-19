@@ -1,0 +1,5 @@
+.btn {
+  @extend .btn-primary;
+  @extend .fw-bold;
+  @extend .text-light;
+}

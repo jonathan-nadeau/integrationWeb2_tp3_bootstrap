@@ -1,0 +1,11 @@
+@import '../bootstrap/scss/bootstrap.scss';
+
+section, .section {
+  @extend .container-fluid;
+  @extend .bg-dark;
+}
+
+.section-border-top {
+  @extend .border-top;
+  border-top-color: $secondary;
+}

@@ -1,0 +1,6 @@
+.title {
+  @extend .display-1;
+  @extend .fw-bold;
+  @extend .mb-4;
+  @extend .text-primary;
+}
