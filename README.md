@@ -1,4 +1,4 @@
-# integrationWeb2_tp3_bootstrap
+# Intégration web 2 - Bootstrap
 
 ## Maquette filaire
 
