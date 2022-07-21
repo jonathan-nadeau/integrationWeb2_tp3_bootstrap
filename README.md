@@ -18,6 +18,10 @@ Cet exercice consiste à reproduire un site web statique selon la maquette filla
     - SASS
     - Bootstrap
 
+## Démonstration
+
+https://integrationweb2-tp2.jonathan-nadeau.ca/
+
 ---
 
 ## Wireframe
@@ -37,3 +41,7 @@ This exercise consists of reproducing a static website according to the wired mo
      - HTML
      - SASS
      - Bootstrap
+
+## Preview
+
+https://integrationweb2-tp2.jonathan-nadeau.ca/
